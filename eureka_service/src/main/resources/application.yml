@@ -1,0 +1,14 @@
+server:
+  #端口
+  port: 8000
+
+eureka:
+  client:
+    # 服务地址
+    service-url:
+      defaultZone: http://127.0.0.1:8000/eureka
+
+    # 是否将自己注册到注册中心（注册中心集群的话设置为true）
+    register-with-eureka: false
+    # 是否需要搜索服务信息，因为本身就是注册中心，所以是false
+    fetch-registry: false
